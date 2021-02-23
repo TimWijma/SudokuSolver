@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku solver</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="table-container">
+        <table id="table"></table>
+        <div id="submit-container">
+            <div id="visualization-container">
+                <span>Visualization:</span>
+                <input type="checkbox" id="visualization">
+            </div>
+            <div>
+                <button id="show-string">string</button>
+                <button id="submitsudoku">submit</button>
+            </div>
+        </div>
+        <div id="string">
+            <input type="text" id="stringinput">
+            <button id="submitstring">submit</button>
+        </div>
+        <p id="valid" style="color: red;"></p>
+    </div>
+    <div class="table-container">
+        <table id="output"></table>
+        <div id="secondgrid-container">
+            <span id="speed"></span>
+            <button id="cleargrids">clear grids</button>
+        </div>
+    </div>
+
+    <script src="web.js"></script>  
+    <script src="code.js"></script>
+</body>
+</html>

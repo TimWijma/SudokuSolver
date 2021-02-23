@@ -1,0 +1,119 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.table-container {
+    display: inline-block;
+    vertical-align: top;
+    padding: 16px;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: black;
+}
+
+td, td > input {
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0,0,0);
+    caret-color: transparent; /* Hide blinking cursor */
+}
+
+td > input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#table td > input:focus  {
+        border: 3px solid darkgray;
+}
+
+td {
+    border: 1px solid #ccc;
+}
+
+#table td {
+    background-color: black;
+}
+
+td:first-child {
+    border-left:solid;
+}
+
+td:nth-child(3n){
+    border-right:solid ;
+}
+
+tr:first-child {
+    border-top:solid;
+}
+
+tr:nth-child(3n) td {
+    border-bottom:solid ;
+}
+
+td input::-webkit-outer-spin-button,
+td input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+td input[type=number] {
+    -moz-appearance: textfield;
+}
+
+button {
+    border: none;
+    border-radius: 2px;
+    background-color: #005ec2;
+    color: white;
+    padding: 8px 16px;
+    display: inline-block;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+}
+
+#submit-container, #string, #secondgrid-container {
+    display : flex;
+    align-items : center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#string input {
+    width: calc(100% - 96px);
+}
+
+#string {
+    opacity: 0;
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+.shown {
+    display: inline-flex;
+    opacity: 1;
+}
